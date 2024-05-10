@@ -6,8 +6,7 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: "https://fmeireles.com/",
-  base: "/escola/",
-  trailingSlash: "always",
+  base: "escola",
   integrations: [tailwind(), mdx(), sitemap()],
   i18n: {
     defaultLocale: "pt-br",
