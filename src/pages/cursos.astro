@@ -25,33 +25,30 @@ publishedBlogEntries.sort(function (a, b) {
     </Sectionhead>
     <main class="mt-16">
       <ul class="grid sm:grid-cols-2 gap-16 max-w-4xl mx-auto">
-        {
-            publishedBlogEntries.map((blogPostEntry) => (
-                <li>
-                    <a href={`/cursos/${blogPostEntry.slug}`}>
-                        <div class="relative group">
-                            <div class="relative w-72 h-56 bg-white rounded-lg shadow-lg overflow-hidden group-hover:shadow-xl transition-shadow duration-300 mx-auto">
+        {publishedBlogEntries.map((blogPostEntry) => (
+            <li>
+                <a href={`/escola/cursos/${blogPostEntry.slug}`}>
+                    <div class="relative group">
+                        <div class="relative w-72 h-56 bg-white rounded-lg shadow-lg overflow-hidden group-hover:shadow-xl transition-shadow duration-300 mx-auto">
                             <div class="absolute inset-0 flex flex-col items-center justify-center">
                                 <span class="text-md mt-4 mb-2 w-1/2 text-center text-primary font-light">
                                     {blogPostEntry.data.category}
                                 </span>
-
                                 <h2 class="text-2xl w-2/3 my-auto text-center text-primary font-bold group-hover:text-secondary transition-colors duration-300">
                                     {blogPostEntry.data.title}
                                 </h2>
-
                                 <div class="flex gap-2 mt-3">
-                                    <span class=" text-xl mt-4 mb-4 w-full my-2 text-center text-primary font-light">
+                                    <span class="text-xl mt-4 mb-4 w-full my-2 text-center text-primary font-light">
                                         {blogPostEntry.data.author}
                                     </span>
                                 </div>
                             </div>
                         </div>
-                    </a>
-                </li>
-            ))
-        }
-      </ul>
+                    </div>
+                </a>
+            </li>
+        ))}
+        </ul>
     </main>
   </Container>
 </Layout>
