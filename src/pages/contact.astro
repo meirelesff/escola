@@ -1,0 +1,43 @@
+---
+import Contactform from "@components/contactform.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+import { Icon } from "astro-icon";
+---
+
+<Layout title="Contato">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Fale conosco</Fragment>
+      <Fragment slot="desc">Caso tenha dúvidas ou precise de informações, entre em contato e responderemos por e-mail e/ou telefone. Para facilitar, preenchar o formulário abaixo e receberemos a sua dúvida diretamente.</Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
+      <div>
+        <h2 class="font-medium text-2xl text-primary">Como podemos ajudar?</h2>
+        <p class="text-lg leading-relaxed text-[#333333] mt-3">
+          Entre em contato via e-mail ou telefone.
+        </p>
+        <div class="mt-5">
+          <div class="flex items-center mt-2 space-x-2 text-[#333333]">
+            <Icon class="text-[#333333] w-4 h-4" name="uil:map-marker" />
+            <span>Rua da Matriz, 82, Botafogo, Rio de Janeiro</span>
+          </div><div class="flex items-center mt-2 space-x-2 text-[#333333]">
+            <Icon class="text-[#333333] w-4 h-4" name="uil:envelope" /><a
+              href="mailto:escoladeinverno@iesp.uerj.br"
+              >escoladeinverno@iesp.uerj.br</a
+            >
+          </div><div class="flex items-center mt-2 space-x-2 text-[#333333]">
+            <Icon class="text-[#333333] w-4 h-4" name="uil:phone" /><a
+              href="tel:+55 (21) 2266-8300">+55 (21) 2266-8300</a
+            >
+          </div>
+        </div>
+      </div>
+      <div>
+        <Contactform />
+      </div>
+    </div>
+  </Container>
+</Layout>

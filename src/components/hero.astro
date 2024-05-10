@@ -1,0 +1,46 @@
+---
+import { Picture } from "astro:assets";
+import heroImage from "assets/bg.svg";
+import Link from "@components/ui/link.astro";
+---
+
+<section
+  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24 mx-auto">
+  <div class="py-6 lg:order-1 hidden lg:block">
+    <Picture
+      src={heroImage}
+      alt="Logo de inverno"
+      widths={[200, 400]}
+      sizes="(max-width: 300) 90vw, 400px"
+      loading="eager"
+      format="avif"
+    />
+  </div>
+  <div>
+    <h1
+      class="text-primary text-5xl lg:text-5xl xl:text-6xl font-extrabold lg:tracking-tight xl:tracking-tighter mb-4 uppercase text-center lg:text-left">
+      Escola de Inverno
+    </h1>
+    <h2
+      class="text-secondary text-3xl lg:text-4xl lg:tracking-tight xl:tracking-tighter mb-1 uppercase text-center lg:text-left">
+      IESP-UERJ
+    </h2>
+    <h4
+      class="text-[#444444] font-light text-lg lg:tracking-tight xl:tracking-tighter mb-10 text-center lg:text-left">
+      9º edição, 1 a 12 de julho de 2023
+    </h4>
+    <p class="text-2xl font-light mb-8 max-w-xl text-[#333333] text-center lg:text-left">
+        Amparados pela tradição de quatro décadas de excelência no ensino, oferecemos treinamento intensivo em teorias, conceitos e métodos de pesquisa em Ciências Sociais
+    </p>
+    <div class="mt-14 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+      <Link
+        href="/#fazemos"
+        class="flex gap-1 rounded-sm border-primary hover:border-secondary"
+        rel="noopener">
+         Saiba mais
+      </Link>
+    </div>
+  </div>
+</section>
+
+

@@ -1,0 +1,63 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import PricingCard from "@components/pricing.astro";
+import FAQ from "@components/faq.astro";
+
+const pricing = [
+  {
+    name: "Workshop",
+    price: "R$ 360,00",
+    monthly: "R$ 180,00",
+    popular: false,
+    features: [
+      "2 dias de evento",
+      "3h de conteúdo por dia",
+      "Carga horária total de 6h",
+      "Ementa exclusiva",
+      "Certificados de participação",
+    ],
+    button: {
+      text: "Inscreva-se",
+      link: "/",
+    },
+  },
+  {
+    name: "Curso intensivo",
+    price: "R$ 590,00",
+    monthly: "R$ 295,00",
+    popular: false,
+    features: [
+      "4 dias de evento",
+      "3h de conteúdo por dia + 2h de monitoria",
+      "Carga horária total de 20h",
+      "Ementa exclusiva",
+      "Certificados de participação",
+    ],
+    button: {
+      text: "Inscreva-se",
+      link: "/",
+    },
+  },
+ 
+];
+---
+
+<Layout title="Valores">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Investimento</Fragment>
+      <Fragment slot="desc">
+        Todos os nossos cursos são remotos e/ou híbridos e abertos a estudantes do IESP-UERJ e público em geral com ensino superior completo em qualquer área do conhecimento. O número de vagas, no entanto, é limitado. As inscrições vão até o dia 26 de junho. Confira os valores e as condições de pagamento a seguir. Estudantes da UERJ têm desconto de 50% em todos os cursos. Dúvidas mais comuns sobre pagamentos são respondidas abaixo.
+      </Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-2 gap-14 mx-auto max-w-screen-lg mt-12">
+      {pricing.map((item) => <PricingCard plan={item} />)}
+    </div>
+    
+    <FAQ />
+    
+  </Container>
+</Layout>

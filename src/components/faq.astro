@@ -1,0 +1,48 @@
+---
+const faqs = [
+    {
+    question: "Quero me inscrever em mais de um curso, tenho desconto?",
+    answer: "Não, descontos aplicam-se apenas para estudantes da UERJ. Os valores acima são para cada curso individualmente.",
+    },
+  {
+    question: "Quais são as formas de pagamento?",
+    answer: "É possível pagar com apenas com boleto bancário expedido pelo CEPUERJ.",
+  },
+  {
+    question: "É possível parcelar o pagamento?",
+    answer: "Sim. Nesse caso, boletos serão emitidos e enviados para cada uma das parcelas.",
+  },
+  {
+    question: "Sou professor(a) ou funcionário(a) da UERJ, tenho desconto?",
+    answer: "Não, descontos de 50% aplicam-se apenas para estudantes com matrícula ativa na UERJ.",
+  },
+  {
+    question: "Quero concorrer a uma bolsa de ação afirmativa, como faço?",
+    answer: "No momento da inscrição, é necessário marcar a opção correspondente e anexar documentos solicitados. Cada pessoa só pode pleitear bolsa de ação afirmativa para um único curso.",
+  },
+  {
+    question: "Paguei minha inscrição, mas, por algum motivo, não poderei participar do curso. Posso pedir reembolso?",
+    answer: "Sim, reembolsos podem ser solicitados diretamente com o CEPUERJ.",
+  },
+  {
+    question: "Quais são os critérios de seleção para os cursos?",
+    answer: "Para estudantes pagantes, vagas serão reservadas por ordem de inscrição. Para bolsas de ação afirmativa, critérios de vulnerabilidade socioeconômica e desempenho acadêmico serão considerados caso hajam mais inscrições do que vagas disponíveis. Note também que alguns cursos podem ter pré-requisitos específicos, informados na página de cada curte.",
+  },
+  {
+    question: "Minha dúvida não está respondida aqui, o que faço?",
+    answer: "Em caso de dúvidas ou problemas, entre em contato conosco pelo e-mail inverno@iesp.uerj.br ou pelo telefone (21) 2334-0629 e te ajudaremos da melhor forma possível."
+  },
+];
+---
+
+<section  class="container content-center w-4/5 md:w-3/4 mx-auto">
+<h2 class="text-center text-4xl lg:text-5xl text-primary font-bold lg:tracking-tight mt-24">Dúvidas comuns</h2>
+<div class="mt-10 mx-auto grid grid-cols-2 gap-14">
+  {faqs.map((faq) => (
+    <div>
+      <h3 class="text-xl font-bold text-primary">{faq.question}</h3>
+      <p class="mt-2 text-[#333333] text-lg font-light">{faq.answer}</p>
+    </div>
+  ))}
+</div>
+</section>

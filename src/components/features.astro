@@ -1,0 +1,63 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon";
+
+const features = [
+  {
+    title: "Formação profissional",
+    description:
+      "Ofertamos cursos intensivos, com certificação, sobre diferentes ferramentas e habilidades valorizadas no mercado de trabalho, como programação em R e Python, ciência de dados e aprendizado de máquina, pesquisa de survey, métodos qualitativos de análise de dados, entre outros",
+    icon: "bx:bxs-briefcase",
+  },
+  {
+    title: "Imersão teórica",
+    description:
+      "Por meio de workshops de dois dias de duração, ajudamos pessoas de diferentes áreas a adquirir conhecimento especializado sobre o estado da arte em Políticas Públicas, Teoria Política, Estudos Raciais e de Gênero, entre vários outros temas relevantes no mundo atual",
+    icon: "bx:bxs-book-open",
+  },
+  {
+    title: "Docentes",
+    description:
+      "Nossos professores e professoras são pesquisadores com ampla experiência em suas áreas de atuação, com formação em instituições de excelência no Brasil e no exterior, e com vasta produção acadêmica e profissional",
+    icon: "bx:bxs-user-voice",
+  },
+  {
+    title: "Inclusividade",
+    description:
+      "Seguindo a experiência pioneira da UERJ em ações afirmativas, destinamos 30% das nossas vagas para pessoas negras e/ou com deficiência, além de adotarmos formato 100% remoto ou híbrido nos nossos cursos, garantindo que sejam acessíveis a alunos e alunas de diferentes backgrounds e regiões do país",
+    icon: "bx:bxs-award",
+  },
+  {
+    title: "Monitorias",
+    description:
+      "Nossos cursos formativos são acompanhados de monitorias e tutoriais nos contraturnos, que ajuda a praticar conteúdos e a desenvolver habilidades práticas, além de oferecer um espaço de troca e aprendizado entre estudantes",
+    icon: "bx:bxs-network-chart",
+  },
+];
+---
+
+<section id="fazemos" class="container content-center w-4/5 md:w-3/4 mx-auto">
+<div class="mt-16 md:mt-2">
+  <h2 class="text-4xl lg:text-5xl text-primary font-bold lg:tracking-tight">
+   O que fazemos?
+  </h2>
+  <p class="text-2xl mt-4 font-light text-[#333333]">
+    A <span class="font-bold text-secondary">Escola de Inverno</span> é o braço de formação intensiva em métodos, conceitos e teorias sociais do <a href="#" target="_blank">IESP-UERJ</a>, centro de pesquisa pioneiro nas Ciências Sociais brasileiras. Nossa missão é elevar a qualidade produção e do consumo de pesquisa social para moldar o futuro do campo e do debate público no país.</p>
+</div>
+
+<div class="grid sm:grid-cols-2 mt-16 gap-8">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full p-2 w-14 h-4 shrink-0">
+          <Icon class="text-primary" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-2xl text-primary">{item.title}</h3>{" "}
+          <p class="text-[#333333] font-light mt-2 text-xl leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
+</section>

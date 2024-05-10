@@ -1,0 +1,76 @@
+---
+import Link from "@components/ui/link.astro";
+const courses = [
+    {
+        name: "Introdução à Ciência de Dados em Python",
+        prof: "Matheus Pestana",
+        tipo: "Curso intensivo",
+        link: "/cursos/introducao-r",
+    },
+    {
+        name: "Introdução ao R",
+        prof: "Fernando Meireles",
+        tipo: "Curso intensivo",
+        link: "/cursos/introducao-r",
+    },
+    {
+        name: "Políticas Públicas",
+        prof: "Argelina Figueiredo e Celina Souza",
+        tipo: "Workshop",
+        link: "/cursos/introducao-r",
+    },
+    {
+        name: "Text Mining",
+        prof: "Fernando Meireles",
+        tipo: "Curso intensivo",
+        link: "/cursos/introducao-r",
+    },
+    {
+        name: "Entrevista e Trabalho de Campo",
+        prof: "A Definir",
+        tipo: "Curso intensivo",
+        link: "/cursos/introducao-r",
+    },
+    {
+        name: "Escrita acadêmica",
+        prof: "A definir",
+        tipo: "Workshop",
+        link: "/cursos/introducao-r",
+    },
+];
+---
+
+<section class="container content-center w-4/5 md:w-3/4 mx-auto">
+    <h2 class="text-4xl lg:text-5xl text-primary font-bold lg:tracking-tight mt-16 md:mt-20">
+        Nossos cursos
+    </h2>
+    <p class="text-2xl mt-4 font-light text-[#333333]">
+        Nesta 9º edição, a <span class="font-bold text-secondary">Escola</span> reforça sua marca ao oferecer dois grandes eixos de formação: workshops sobre teoria e conceitos. Confira alguns dos cursos que serão oferecidos este ano.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-16">
+        {courses.map((course) => (
+            <a href={course.link} class="relative group">
+                <div class="w-60 h-60 bg-white rounded-lg shadow-lg overflow-hidden group-hover:shadow-xl transition-shadow duration-300 mx-auto">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <p class="text-md mt-4 mb-2 w-1/2 text-center text-primary font-light">
+                            {course.tipo}
+                        </p>
+                        <h3 class="text-2xl w-2/3 my-auto text-center text-primary font-bold group-hover:text-secondary transition-colors duration-300">
+                            {course.name}
+                        </h3>
+                        <p class="text-xl mt-4 mb-4 w-2/3 my-2 text-center text-primary font-light">
+                            {course.prof}
+                        </p>
+                    </div>
+                </div>
+            </a>
+        ))}
+    </div>
+    <div class="mt-14 flex flex-col sm:flex-row gap-3 justify-center">
+        <Link
+          href="/cursos"
+          class="flex gap-1 rounded-sm border-primary hover:border-secondary"
+          rel="noopener">
+           Veja mais cursos
+        </Link>
+      </div>
+</section>

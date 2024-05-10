@@ -1,0 +1,81 @@
+---
+import Container from "@components/container.astro";
+import Link from "@components/ui/link.astro";
+import Dropdown from "./dropdown.astro";
+import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+
+const menuitems = [
+  {
+    title: "Início",
+    path: "/",
+  },
+  {
+    title: "Cursos",
+    path: "/cursos",
+  },
+  {
+    title: "Inscrição e preços",
+    path: "/inscricao",
+  },
+  {
+    title: "Bolsas de estudo",
+    path: "/bolsas",
+  },
+  {
+    title: "Contato",
+    path: "/contact",
+  },
+];
+---
+
+<Container>
+<header class="flex flex-col lg:flex-row justify-end items-center my-5 gap-8">
+    <Astronav>
+        <div class="flex w-full lg:w-auto items-end justify-end">
+            <div class="block lg:hidden">
+                <MenuIcon class="w-4 h-4 text-[#444444]" />
+            </div>
+        </div>
+        <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0 justify-end">
+            <ul class="flex flex-col lg:flex-row lg:gap-3">
+                {
+                    menuitems.map((item, index) => (
+                        <>
+                            {item.children && (
+                                <Dropdown
+                                    title={item.title}
+                                    children={item.children}
+                                    lastItem={index === menuitems.length - 1}
+                                />
+                            )}
+
+                            {!item.children && (
+                                <li>
+                                    <a
+                                        href={item.path}
+                                        class="flex lg:px-3 py-2 items-center text-[#444444] hover:text-secondary">
+                                        <span> {item.title}</span>
+                                        {item.badge && (
+                                            <span class="ml-1 px-2 py-0.5 text-[10px] animate-pulse font-semibold uppercase text-white bg-indigo-600 rounded-full">
+                                                New
+                                            </span>
+                                        )}
+                                    </a>
+                                </li>
+                            )}
+                        </>
+                    ))
+                }
+            </ul>
+            <div class="lg:hidden flex items-center mt-3 gap-4 border-primary">
+                <Link href="#" size="md" block>Inscrever-se</Link>
+            </div>
+        </MenuItems>
+    </Astronav>
+    <div>
+        <div class="hidden lg:flex items-center gap-4">
+            <Link class="border-primary hover:border-secondary rounded-sm" href="#" size="md">Inscreva-se</Link>
+        </div>
+    </div>
+  </header>
+</Container>

@@ -1,0 +1,57 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Link from "@components/ui/link.astro";
+
+// Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const blogEntries = await getCollection("cursos");
+  return blogEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+// Get the entry directly from the prop on render
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout title={entry.data.title}>
+  <Container>
+    <div class="mx-auto max-w-3xl mt-14">
+      <span class="text-[#444444] font-light uppercase tracking-wider text-sm">
+        {entry.data.category}
+      </span>
+      <h1
+        class="text-primary text-4xl lg:text-5xl font-bold lg:tracking-tight mt-1 lg:leading-tight">
+        {entry.data.title}
+      </h1>
+      <div class="flex gap-2 mt-3 items-center flex-wrap md:flex-nowrap">
+        <span class="mt-2 text-[#333333] text-2xl font-light">
+          Por {entry.data.author}
+        </span>
+      </div>
+    </div>
+
+    <div class="mx-auto prose prose-lg mt-6 max-w-3xl font-light text-[#333333] text-xl">
+      <Content />
+    </div>
+    <div class="mt-14 flex flex-col sm:flex-row gap-3 justify-center">
+        <Link
+          href="/cursos"
+          class="flex gap-1 rounded-sm border-primary hover:border-secondary"
+          rel="noopener">
+           Inscreva-se neste curso
+        </Link>
+      </div>
+    <div class="text-center mt-14">
+      <a
+        href="/cursos"
+        class="hover:text-secondary transition"
+        >← Voltar à lista de cursos</a
+      >
+    </div>
+  </Container>
+</Layout>
