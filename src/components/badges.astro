@@ -2,38 +2,44 @@
 import Link from "@components/ui/link.astro";
 const courses = [
     {
+        name: "Políticas Públicas",
+        prof: "Argelina Figueiredo e Celina Souza",
+        instituicao: "IESP-UERJ e UFBA",
+        tipo: "Workshop",
+        link: "/escola/cursos/introducao-r",
+    },
+    {
         name: "Introdução à Ciência de Dados em Python",
         prof: "Matheus Pestana",
+        instituicao: "FGV",
         tipo: "Curso intensivo",
         link: "/escola/cursos/introducao-r",
     },
     {
         name: "Introdução ao R",
-        prof: "Fernando Meireles",
+        prof: "Emanuel Baruque",
+        instituicao: "UFPE",
         tipo: "Curso intensivo",
-        link: "/escola/cursos/introducao-r",
-    },
-    {
-        name: "Políticas Públicas",
-        prof: "Argelina Figueiredo e Celina Souza",
-        tipo: "Workshop",
         link: "/escola/cursos/introducao-r",
     },
     {
         name: "Text Mining",
         prof: "Fernando Meireles",
+        instituicao: "IESP-UERJ",
         tipo: "Curso intensivo",
         link: "/escola/cursos/introducao-r",
     },
     {
         name: "Entrevista e Trabalho de Campo",
-        prof: "A Definir",
+        prof: "Eugênia Motta",
+        instituicao: "UFRJ e IESP-UERJ",
         tipo: "Curso intensivo",
         link: "/escola/cursos/introducao-r",
     },
     {
-        name: "Escrita acadêmica",
-        prof: "A definir",
+        name: "Conservadorismos",
+        prof: "Christian Lynch e Paulo Cassimiro",
+        instituicao: "IESP-UERJ",
         tipo: "Workshop",
         link: "/escola/cursos/introducao-r",
     },
@@ -45,11 +51,11 @@ const courses = [
         Nossos cursos
     </h2>
     <p class="text-2xl mt-4 font-light text-[#333333]">
-        Nesta 9º edição, a <span class="font-bold text-secondary">Escola</span> reforça sua marca ao oferecer dois grandes eixos de formação: workshops sobre teoria e conceitos. Confira alguns dos cursos que serão oferecidos este ano.</p>
+        Nesta 9º edição, a <span class="font-bold text-secondary">Escola</span> reforça sua marca ao oferecer dois grandes eixos de formação: treinamento intensivo em métodos quantitativos e qualitativos e workshops sobre teorias e conceitos. Confira alguns dos cursos que serão oferecidos este ano.</p>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-16">
         {courses.map((course) => (
             <a href={course.link} class="relative group">
-                <div class="w-60 h-60 bg-white rounded-lg shadow-lg overflow-hidden group-hover:shadow-xl transition-shadow duration-300 mx-auto">
+                <div class="w-72 h-72 bg-white rounded-lg shadow-lg overflow-hidden group-hover:shadow-xl transition-shadow duration-300 mx-auto">
                     <div class="absolute inset-0 flex flex-col items-center justify-center">
                         <p class="text-md mt-4 mb-2 w-1/2 text-center text-primary font-light">
                             {course.tipo}
@@ -57,8 +63,11 @@ const courses = [
                         <h3 class="text-2xl w-2/3 my-auto text-center text-primary font-bold group-hover:text-secondary transition-colors duration-300">
                             {course.name}
                         </h3>
-                        <p class="text-xl mt-4 mb-4 w-2/3 my-2 text-center text-primary font-light">
+                        <p class="text-xl mt-4 w-2/3 my-2 text-center text-primary">
                             {course.prof}
+                        </p>
+                        <p class="text-md mb-4 w-2/3 my-0 text-center text-primary font-light">
+                            {course.instituicao}
                         </p>
                     </div>
                 </div>
