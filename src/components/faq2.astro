@@ -1,0 +1,49 @@
+---
+const faqs = [
+    {
+    question: "Quem pode pleitear as bolsas pelo sistema de cotas?",
+    answer: "Pessoas negras e/ou com deficiência. No caso de pessoas negras, no formulário de inscrição, é necessário anexar uma declaração formal e uma foto para concorrer às bolsas.",
+    },
+    {
+     question: "Quando abrirão as inscrições para as bolsas?",
+        answer: "As inscrições para as bolsas serão abertas no mesmo período das inscrições para os cursos, mas serão encerradas uma semana antes para termos tempo hábil de remanejar bolsas.",   
+    },
+    {
+        question: "Posso pleitear bolsas pelo sistema de cotas para mais de um curso?",
+        answer: "Não. Para ampliar o acesso aos cursos da Escola de Inverno, as bolsas serão concedidas para apenas um curso por pessoa inscrita.",
+    },
+  {
+    question: "Tentei e não consegui uma bolsa pelo sistema de cotas, posso pagar pelo curso?",
+    answer: "Caso ainda haja vagas no curso desejado, é possível submeter uma nova inscrição mediante a efetivação do pagamento bancário.",
+  },
+  {
+    question: "O que faço se for contemplado com bolsa e não puder comparecer ao curso?",
+    answer: "É necessário comunicar à organização da Escola Inverno o mais rapidamente possível, apresentando justificativa, para que a bolsa seja destinada a outra pessoa.",
+  },
+  {
+    question: "O que ocorre se a bolsista(o) não comunicar e justificar a ausência à organização da Escola de Inverno?",
+    answer: "Nesse caso, com o objetivo de tornar mais efetivas as ações afirmativas, a bolsista(o) não será priorizada(o) na concorrência às vagas reservadas na edição seguinte da Escola de Inverno.",
+  },
+  {
+    question: "Há garantia de reserva de vagas?",
+    answer: "Somente inscrições com pagamento efetivado estarão garantidas. Assim que cada turma atingir seu número máximo de estudantes, elas serão fechadas.",
+  },
+  {
+    question: "Como e onde os cursos serão realizados?",
+    answer: "Os cursos da Escola de Inverno serão realizados de forma híbrida ou totalmente remota. No caso da forma híbrida, as aulas presenciais serão ministradas no IESP-UERJ - Rua da Matriz 82 - Botafogo - Rio de Janeiro. Para as aulas remotas, serão disponibilizados links para acessar as salas online.",
+  },
+  
+];
+---
+
+<section  class="container content-center w-4/5 md:w-3/4 mx-auto">
+<h2 class="text-center text-4xl lg:text-5xl text-primary font-bold lg:tracking-tight mt-24">Dúvidas comuns</h2>
+<div class="mt-10 mx-auto grid md:grid-cols-2 gap-14">
+  {faqs.map((faq) => (
+    <div>
+      <h3 class="text-xl font-bold text-primary">{faq.question}</h3>
+      <p class="mt-2 text-[#333333] text-lg font-light">{faq.answer}</p>
+    </div>
+  ))}
+</div>
+</section>

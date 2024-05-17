@@ -1,0 +1,50 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+
+// Filter team entries with 'draft: false' & date before current date
+const publishedTeamMembers = await getCollection("team", ({ data }) => {
+  return !data.draft && data.publishDate < new Date();
+});
+---
+
+<Layout title="Institucional">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Quem somos</Fragment>
+      <Fragment slot="desc">Desde 2012 treinamos pessoas de diferentes áreas no uso de métodos e conceitos de pesquisa social</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16  w-4/5 md:w-3/4">
+      <h2 class="font-bold text-3xl text-primary">
+        Sobre a <span class="text-secondary">Escola</span>
+      </h2>
+      <p class="text-xl mt-4 font-light text-[#333333]">
+        Somos uma escola de pesquisa social que oferece cursos intensivos e workshops para pessoas de diferentes áreas. Desde 2012, já realizamos oito edições, com interrupção apenas durante a pandemia de Covid-19. Em 2022, retomamos e reestruturamos nossas atividades para abarcar o que acreditamos ser a marca do <a class="text-[#9e7a22]" href="https://iesp.uerj.br/" target="_blank">IESP-UERJ</a>: o ensino de conceitos e teorias que são de interesse de formuladores de políticas públicas, governos, organizações da sociedade civil e da população em geral.<br><br>
+        
+        Ministrados por docentes e pesquisadores do <a class="text-[#9e7a22]" href="https://iesp.uerj.br/" target="_blank">IESP-UERJ</a> e de outras universidades de destaque no Brasil e internacionalmente, nossos cursos oferecem ensino com a qualidade e a excelência acadêmica que são os nossos pilares. Ofertamos cursos tanto de dois quanto de quatro dias de duração em diferentes turnos e formatos, permitindo pessoas de diferentes áreas e regiões se conectar ao nosso ambiente de ensino e pesquisa. A grade da <span class="text-secondary font-bold">Escola de Inverno</span> é planejada para complementar e aprofundar conteúdos dos currículos regulares das nossas pós-graduações.
+
+      </p>
+      <h2 class="font-bold text-3xl text-primary mt-10">
+        Equipe
+      </h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+      {
+        publishedTeamMembers.map((teamMemberEntry) => (
+          <div class="group">
+            <div class="mt-4 text-center">
+              <h2 class="text-2xl text-primary">{teamMemberEntry.data.name}</h2>
+              <h3 class="text-md text-primary">
+                {teamMemberEntry.data.title}
+              </h3>
+              <a href="#" target="_blank" class="text-sm underline text-primary">Lattes</a>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </Container>
+</Layout>
