@@ -27,11 +27,11 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
         Ministrados por docentes e pesquisadores do <a class="text-[#9e7a22]" href="https://iesp.uerj.br/" target="_blank">IESP-UERJ</a> e de outras universidades de destaque no Brasil e internacionalmente, nossos cursos oferecem ensino com a qualidade e a excelência acadêmica que são os nossos pilares. Ofertamos cursos tanto de dois quanto de quatro dias de duração em diferentes turnos e formatos, permitindo pessoas de diferentes áreas e regiões se conectar ao nosso ambiente de ensino e pesquisa. A grade da <span class="text-secondary font-bold">Escola de Inverno</span> é planejada para complementar e aprofundar conteúdos dos currículos regulares das nossas pós-graduações.
 
       </p>
-      <h2 class="font-bold text-3xl text-primary mt-10">
+      <h2 class="font-bold text-3xl text-primary mt-14">
         Equipe
       </h2>
     </div>
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-8">
       {
         publishedTeamMembers.map((teamMemberEntry) => (
           <div class="group">

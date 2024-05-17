@@ -8,7 +8,7 @@ image: {
 }
 publishDate: "2022-11-08 11:39"
 category: "Curso intensivo"
-author: "Fernando Meireles"
+author: "Quemuel Baruque"
 tags: [R, programação]
 ---
 
