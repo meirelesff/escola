@@ -2,9 +2,11 @@
 draft: false
 name: "Bruno Schaefer"
 title: "Coordenador"
+twitter: "http://lattes.cnpq.br/9180210634743879"
+website: "https://fmeireles.com/"
 avatar: {
-    src: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?&fit=crop&w=280",
-    alt: "Marcell Ziemann"
+    src: "https://images.unsplash.com/photo-1580489944761-15a19d654956?&fit=crop&w=280",
+    alt: "Janette Lynch"
 }
-publishDate: "2022-11-08 15:39"
+publishDate: "2022-11-07 15:39"
 ---

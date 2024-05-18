@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
+import { Icon } from "astro-icon";
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
@@ -40,9 +41,22 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
               <h3 class="text-md text-primary">
                 {teamMemberEntry.data.title}
               </h3>
-              <a href="#" target="_blank" class="text-sm underline text-primary">Lattes</a>
+              <div class="flex items-center justify-center">
+                <div class="bg-black rounded-full p-2 w-10 h-10">
+                    <a href={teamMemberEntry.data.website} target="_blank">
+                      <Icon class="text-primary" name="bx:bx-link-alt" />
+                    </a>
+                </div>
+                {teamMemberEntry.data.twitter && (
+                  <div class="bg-black rounded-full p-2 w-10 h-10">
+                      <a href={teamMemberEntry.data.twitter} target="_blank">
+                        <Icon class="text-primary" name="bx:bxl-twitter" />
+                      </a>
+                  </div>
+                )}
+              </div>
+              </div>
             </div>
-          </div>
         ))
       }
     </div>
