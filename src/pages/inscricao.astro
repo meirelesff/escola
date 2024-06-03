@@ -9,7 +9,8 @@ const pricing = [
   {
     name: "Workshop",
     price: "R$ 360,00",
-    monthly: "R$ 180,00",
+    monthly: "R$ 180,00", 
+    desconto: "R$ 288,00",
     popular: false,
     features: [
       "2 dias de evento",
@@ -27,6 +28,7 @@ const pricing = [
     name: "Curso intensivo",
     price: "R$ 520,00",
     monthly: "R$ 260,00",
+    desconto: "R$ 416,00",
     popular: false,
     features: [
       "4 dias de evento",
@@ -40,6 +42,7 @@ const pricing = [
       link: "/",
     },
   },
+  
  
 ];
 ---
@@ -49,7 +52,7 @@ const pricing = [
     <Sectionhead>
       <Fragment slot="title">Investimento</Fragment>
       <Fragment slot="desc">
-        Oferecemos cursos remotos e/ou híbridos e abertos a estudantes do IESP-UERJ e público em geral com ensino superior completo em qualquer área do conhecimento. O número de vagas, no entanto, é limitado. As inscrições vão até o dia 26 de junho. Confira os valores e as condições de pagamento a seguir. Estudantes da UERJ têm desconto de 50% em todos os cursos. Dúvidas mais comuns sobre pagamentos são respondidas abaixo.
+        Oferecemos cursos remotos e/ou híbridos e abertos a estudantes do IESP-UERJ e público em geral com ensino superior completo em qualquer área do conhecimento. O número de vagas, no entanto, é limitado. As inscrições vão até o dia 26 de junho.  Estudantes da UERJ têm desconto de <span class="text-secondary font-semibold">50%</span> em todos os cursos. Pessoas que se inscreverem em três ou mais cursos terão <span class="text-secondary font-semibold">20%</span> de desconto no valor total dos cursos pretendidos. Dúvidas mais comuns sobre pagamentos são respondidas abaixo.
       </Fragment>
     </Sectionhead>
 
