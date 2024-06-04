@@ -7,7 +7,7 @@ image: {
     alt: "Ciência de Dados em Python"
 }
 publishDate: "2022-11-09 16:39"
-category: "Workshop"
+category: "Híbrido"
 author: "Christian Lynch e Paulo Cassimiro"
 tags: [Ideologias]
 ---

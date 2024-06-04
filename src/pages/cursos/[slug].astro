@@ -28,9 +28,17 @@ const { Content } = await entry.render();
         class="text-primary text-4xl lg:text-5xl font-bold lg:tracking-tight mt-1 lg:leading-tight">
         {entry.data.title}
       </h1>
+      <h2
+        class="text-primary text-xl lg:text-xl font-semibold lg:tracking-tight mt-5 lg:leading-tight">
+        Formato: {entry.data.formato}
+      </h2>
+      <h2
+        class="text-primary text-xl lg:text-xl font-semibold lg:tracking-tight mt-2 lg:leading-tight">
+        Data e horário: {entry.data.diaHora}
+      </h2>
     </div>
 
-    <div class="mx-auto prose prose-lg mt-6 max-w-3xl font-light text-[#333333] text-xl">
+    <div class="mx-auto prose prose-lg mt-10 max-w-3xl font-light text-[#333333] text-xl">
       <Content />
     </div>
     <div class="mt-14 flex flex-col sm:flex-row gap-3 justify-center">

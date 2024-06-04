@@ -20,7 +20,7 @@ publishedBlogEntries.sort(function (a, b) {
     <Sectionhead>
       <Fragment slot="title">Nossos cursos</Fragment>
       <Fragment slot="desc">
-        Nesta edição, ofertaremos uma variedade de cursos e workshops sobre conceitos, teorias e métodos de pesquisa social. Confira a seguir.
+        Nesta edição, ofertaremos uma variedade de cursos e workshops sobre conceitos, teorias e métodos de pesquisa social. Cursos <span class="font-semibold text-secondary">remotos (online)</span> serão realizados por meio do Google Meet e requerem computador com conexão estável com a internet; cursos <span class="font-semibold text-secondary">híbridos</span> serão realizados na sede do <a class="text-[#9e7a22]" href="https://iesp.uerj.br/" target="_blank">IESP-UERJ</a> e transmitidos online via Google Meet. Confira datas, horários e informações de cada curso a seguir.
       </Fragment>
     </Sectionhead>
     <main class="mt-16">
@@ -31,14 +31,17 @@ publishedBlogEntries.sort(function (a, b) {
                     <div class="relative group">
                         <div class="relative w-96 h-72 bg-white rounded-lg shadow-lg overflow-hidden group-hover:shadow-xl transition-shadow duration-300 mx-auto">
                             <div class="absolute inset-0 flex flex-col items-center justify-center">
-                                <span class="text-md mt-4 mb-2 w-1/2 text-center text-primary font-light">
-                                    {blogPostEntry.data.category}
+                                <span class="text-md mt-4 w-3/4 text-center text-primary font-light">
+                                    {blogPostEntry.data.category} - {blogPostEntry.data.formato}
+                                </span>
+                                <span class="text-md mb-2 w-2/3 text-center text-primary font-light">
+                                    {blogPostEntry.data.diaHora}
                                 </span>
                                 <h2 class="text-2xl w-2/3 my-auto text-center text-primary font-bold group-hover:text-secondary transition-colors duration-300">
                                     {blogPostEntry.data.title}
                                 </h2>
                                 <div class="flex gap-2 mt-3">
-                                    <span class="text-xl mt-4 mb-4 w-full my-2 text-center text-primary font-light">
+                                    <span class="text-xl mt-4 mb-5 w-full my-2 text-center text-primary font-light">
                                         {blogPostEntry.data.author}
                                     </span>
                                 </div>
@@ -49,6 +52,7 @@ publishedBlogEntries.sort(function (a, b) {
             </li>
         ))}
         </ul>
+        <br>
     </main>
   </Container>
 </Layout>

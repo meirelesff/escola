@@ -1,7 +1,8 @@
 ---
 draft: false
 title: "Construção de conceitos e de indicadores"
-snippet: "Construção de conceitos e de indicadores"
+diaHora: "3 e 4 de julho, das 19h às 21h"
+snippet: "Remoto"
 image: {
     src: "https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?&fit=crop&w=430&h=240",
     alt: "Ciência de Dados em Python"
