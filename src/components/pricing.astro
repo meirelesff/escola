@@ -24,13 +24,6 @@ const { plan } = Astro.props;
           </p>
         )
       }
-      {
-        plan.desconto && (
-          <p class="mt-1 text-lg text-primary md:text-lg">
-            {plan.desconto} p/ 3 ou mais cursos
-          </p>
-        )
-      }
     </div><ul class="grid mt-8 text-left gap-y-4">
       {
         plan.features.map((item) => (
