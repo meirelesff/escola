@@ -1,6 +1,7 @@
 ---
 draft: false
 title: "Gênero, raça e sexualidade"
+diaHora: "9 e 10 de julho, das 19h às 22h"
 snippet: "Gênero, raça e sexualidade"
 image: {
     src: "https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?&fit=crop&w=430&h=240",

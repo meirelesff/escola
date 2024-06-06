@@ -1,6 +1,7 @@
 ---
 draft: false
 title: "NVIVO: Fundamentos de Análise Qualitativa Auxiliada por Computador"
+diaHora: "1 a 4 de julho, das 9h às 12h"
 snippet: "NVIVO: Fundamentos de Análise Qualitativa Auxiliada por Computador"
 image: {
     src: "https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?&fit=crop&w=430&h=240",

@@ -2,7 +2,7 @@
 draft: false
 title: "Emergência Climática"
 snippet: "Emergência Climática"
-diaHora: "3/7 e 10/7, das 18h às 21h"
+diaHora: "3 e 7 de julho, das 18h às 21h"
 image: {
     src: "https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?&fit=crop&w=430&h=240",
     alt: "Ciência de Dados em Python"

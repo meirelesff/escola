@@ -1,6 +1,7 @@
 ---
 draft: false
 title: "Entrevistas e Trabalho de Campo"
+diaHora: "3, 5, 10 e 12 de julho, das 19h às 22h"
 snippet: "Entrevistas e Trabalho de Campo"
 formato: "Presencial"
 image: {

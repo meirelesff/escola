@@ -1,6 +1,7 @@
 ---
 draft: false
 title: "Introdução à Análise de dados em R"
+diaHora: "1 a 4 de julho, das 19h às 22h"
 snippet: "Este é um curso de introdução ao R voltado para cientistas sociais."
 image: {
     src: "https://plus.unsplash.com/premium_photo-1669077046823-913705d81b44?&fit=crop&w=430&h=240",

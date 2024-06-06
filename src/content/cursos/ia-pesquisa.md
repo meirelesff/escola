@@ -1,6 +1,7 @@
 ---
 draft: false
 title: "Ferramentas de Inteligência Artificial para a pesquisa acadêmica"
+diaHora: "10 e 11 de julho, das 19h às 22h"
 snippet: "Ferramentas de Inteligência Artificial para a pesquisa acadêmica"
 image: {
     src: "https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?&fit=crop&w=430&h=240",

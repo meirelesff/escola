@@ -3,6 +3,7 @@ import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import FAQ2 from "@components/faq2.astro";
+import Link from "@components/ui/link.astro";
 ---
 
 <Layout title="Ações afirmativas">
@@ -14,8 +15,18 @@ import FAQ2 from "@components/faq2.astro";
         <br>
         Com o objetivo de tornar ainda mais efetivas as ações afirmativas, solicitamos que candidatas e candidatos contemplados com bolsas informem à organização da <span class="text-secondary font-semibold">Escola</span>, o mais rapidamente possível, caso não possam comparecer aos cursos. Dessa forma, poderemos alocar as bolsas para outras pessoas. Como forma de promover a maior inclusão de pessoas possível, em casos de ausência não seja justificada as bolsistas (os) não poderão concorrer às vagas reservadas no sistema de cotas na edição seguinte da <span class="text-secondary font-semibold">Escola de Inverno</span>.</span>
 
+        Para concorrer a uma bolsa, acesse o formulário de inscrição clicando no botão abaixo. 
+
       </Fragment>
     </Sectionhead>
+    <div class="mt-14 flex flex-col sm:flex-row gap-3 justify-center lg:justify-center">
+        <Link
+          href="/escola/#fazemos"
+          class="flex gap-1 rounded-sm border-primary hover:border-secondary"
+          rel="noopener">
+            Formulário de aplicação
+        </Link>
+      </div>
     <FAQ2 />
   </Container>
 </Layout>

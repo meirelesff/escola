@@ -1,7 +1,8 @@
 ---
 draft: false
-title: "Políticas Públicas"
-snippet: "Políticas Públicas"
+title: "Políticas Públicas e Instituições"
+snippet: "Políticas Públicas e Instituições"
+diaHora: "1 e 2 de julho, das 14h às 17h"
 formato: "Híbrido"
 image: {
     src: "https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?&fit=crop&w=430&h=240",
@@ -13,7 +14,7 @@ author: "Celina Souza e Argelina Cheibub Figueiredo"
 tags: [Políticas públicas]
 ---
 
-O workshop visa introduzir os alunos no campo de estudo das políticas públicas e a sua relação com as instituições políticas. O workhop será dividido em dois módulos, que se complementam. O primeiro discute os diversos campos disciplinares que tratam das políticas públicas, seus elementos constitutivos (*policy*, *politics* e *polity*) e as principais teorias sobre a análise de políticas públicas. O segundo módulo analisa como as instituições (regimes políticos, sistemas de governo, sistemas eleitorais, partidos políticos, federalismo) influenciam a adoção, o veto, a implementação e as mudanças nas políticas públicas.
+O workshop visa introduzir os alunos no campo de estudo das políticas públicas e a sua relação com as instituições políticas. O workshop será dividido em dois módulos, que se complementam. O primeiro discute os diversos campos disciplinares que tratam das políticas públicas, seus elementos constitutivos (*policy*, *politics* e *polity*) e as principais teorias sobre a análise de políticas públicas. O segundo módulo analisa como as instituições (regimes políticos, sistemas de governo, sistemas eleitorais, partidos políticos, federalismo) influenciam a adoção, o veto, a implementação e as mudanças nas políticas públicas.
 
 <br>
 <span class="text-2xl font-bold text-primary">Celina Souza</span>

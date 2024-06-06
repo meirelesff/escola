@@ -1,6 +1,7 @@
 ---
 draft: false
 title: "Introdução à Ciência de Dados com Python"
+diaHora: "8 a 11 de julho, das 9h às 12h"
 snippet: "Introdução à Ciência de Dados com Python"
 image: {
     src: "https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?&fit=crop&w=430&h=240",
