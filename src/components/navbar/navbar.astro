@@ -7,27 +7,27 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 const menuitems = [
   {
     title: "Início",
-    path: "/escola",
+    path: "/",
   },
   {
     title: "Institucional",
-    path: "/escola/institucional",
+    path: "/institucional",
   },
   {
     title: "Cursos",
-    path: "/escola/cursos",
+    path: "/cursos",
   },
   {
     title: "Inscrição e preços",
-    path: "/escola/inscricao",
+    path: "/inscricao",
   },
   {
     title: "Bolsas de estudo",
-    path: "/escola/bolsas",
+    path: "/bolsas",
   },
   {
     title: "Contato",
-    path: "/escola/contato",
+    path: "/contato",
   },
 ];
 ---
@@ -72,13 +72,13 @@ const menuitems = [
                 }
             </ul>
             <div class="lg:hidden flex items-center mt-3 gap-4 border-primary">
-                <Link href="/escola/formulario" size="md" block>Inscreva-se</Link>
+                <Link href="/formulario" size="md" block>Inscreva-se</Link>
             </div>
         </MenuItems>
     </Astronav>
     <div>
         <div class="hidden lg:flex items-center gap-4">
-            <Link class="border-primary hover:border-secondary rounded-sm" href="/escola/formulario" size="md">Inscreva-se</Link>
+            <Link class="border-primary hover:border-secondary rounded-sm" href="/formulario" size="md">Inscreva-se</Link>
         </div>
     </div>
   </header>
