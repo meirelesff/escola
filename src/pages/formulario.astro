@@ -1,0 +1,17 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+---
+
+<Layout title="Valores">
+  <Container>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16 w-4/5 md:w-3/4">
+        <h1 class="text-4xl text-primary lg:text-5xl font-bold lg:tracking-tight mb-8">
+        Formulário de inscrição
+        </h1>
+    </div>
+
+    <iframe data-tally-src="https://tally.so/embed/mJR6NJ?hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="743" frameborder="0" marginheight="0" marginwidth="0" title="Formulário de inscrição"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+</Container>
+</Layout>
