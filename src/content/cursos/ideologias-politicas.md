@@ -3,6 +3,7 @@ draft: false
 title: "Ideologias políticas e pensamento brasileiro: teorias e casos"
 diaHora: "10 e 11 de julho, das 14h às 17h"
 snippet: "Ideologias políticas e pensamento brasileiro"
+formato: "Híbrido"
 image: {
     src: "https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?&fit=crop&w=430&h=240",
     alt: "Ciência de Dados em Python"
@@ -18,7 +19,7 @@ O estudo das ideologias confunde-se com a história das ciências sociais. A ten
 <br>
 <span class="text-2xl font-bold text-primary">Christian Edward Cyril Lynch</span>
 
-Doutor em Ciência Política pelo Instituto Universitário de Pesquisas do Rio de Janeiro (antigo IUPERJ atual IESP-UERJ) em 2007. É professor de Pensamento Político Brasileiro no Instituto de Estudos Políticos e Sociais da Universidade do Estado do Rio de Janeiro (IESP-UERJ – antigo IUPERJ) e pesquisador da Fundação Casa de Rui Barbosa. Leciona Teoria do Estado e Pensamento Constitucional Brasileiro no Programa de Pós-Graduação em Direito da Universidade Veiga de Almeida (UVA).
+Possui graduação em Direito pela Universidade Federal do Estado do Rio de Janeiro (1996), mestrado em Direito pela Pontifícia Universidade Católica do Rio de Janeiro (1999) e doutorado em Ciência Política (Ciência Política e Sociologia) pelo Instituto Universitário de Pesquisas do Rio de Janeiro (2007). Atualmente é bolsista de produtividade (nível 2) do Conselho Nacional de Desenvolvimento Científico e Tecnológico, pesquisador cientista do nosso Estado - FAPERJ, sócio titular do Instituto Histórico e Geográfico Brasileiro, pesquisador da Fundação Casa de Rui Barbosa (FCRB) e professor associado do Instituto de Estudos Sociais e Políticos da Universidade do Estado do Rio de Janeiro (Iesp-Uerj). Foi presidente do Instituto Brasileiro de História do Direito, coordenador da área de Teoria Política da ANPOCS e de Pensamento Politico Brasileiro da Associação Brasileira de Ciência Política, além de professor da Escola de Direito da Universidade Federal Fluminense (UFF), da Escola de Ciência Política da Universidade Federal do Estado do Rio de Janeiro (UNIRIO), da Pós-graduação em Direito da Universidade Veiga de Almeida (UVA) e da extinta Universidade Gama Filho (UGF). Foi pesquisador visitante na Escola de Altos Estudos em Ciências Sociais (EHESS) de Paris; e professor visitante da Universidade Agostinho Neto (Luanda), da Universidade Nacional de Cuyo (Argentina), da Universidade de Lisboa e do Colégio do México. Tem experiência na área de Ciência Política, com ênfase em Teoria Política Moderna, atuando principalmente nos seguintes temas: teoria política, história do direito, ideologias políticas, pensamento político brasileiro, história do brasil.
 <br>
 <span class="text-2xl font-bold text-primary">Paulo Henrique Paschoeto Cassimiro</span>
 
