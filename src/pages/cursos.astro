@@ -4,6 +4,9 @@ import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 
+// Get the base path from Astro config
+const base = import.meta.env.BASE_URL;
+
 // Filter blog entries with 'draft: false' & date before current date
 const publishedBlogEntries = await getCollection("cursos", ({ data }) => {
   return !data.draft && data.publishDate < new Date();
@@ -27,7 +30,7 @@ publishedBlogEntries.sort(function (a, b) {
       <ul class="grid sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
         {publishedBlogEntries.map((blogPostEntry) => (
             <li>
-                <a href={`/cursos/${blogPostEntry.slug}`}>
+                <a href={`${base}cursos/${blogPostEntry.slug}`}>
                     <div class="relative group">
                         <div class="relative w-96 h-72 bg-white rounded-lg shadow-lg overflow-hidden group-hover:shadow-xl transition-shadow duration-300 mx-auto">
                             <div class="absolute inset-0 flex flex-col items-center justify-center">
