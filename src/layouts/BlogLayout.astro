@@ -2,6 +2,9 @@
 import Container from "@components/container.astro";
 import Layout from "./Layout.astro";
 
+// Get the base path from Astro config
+const base = import.meta.env.BASE_URL;
+
 const { frontmatter } = Astro.props;
 ---
 
@@ -27,7 +30,7 @@ const { frontmatter } = Astro.props;
     </div>
     <div class="text-center mt-8">
       <a
-        href="/cursos"
+        href={`${base}cursos`}
         class="bg-gray-100 px-5 py-3 rounded-md hover:bg-gray-200 transition"
         >← Voltar aos cursos</a
       >
