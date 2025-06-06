@@ -2,6 +2,9 @@
 import { Picture } from "astro:assets";
 import heroImage from "assets/bg.svg";
 import Link from "@components/ui/link.astro";
+
+// Get the base path from Astro config
+const base = import.meta.env.BASE_URL;
 ---
 
 <section
@@ -38,7 +41,7 @@ import Link from "@components/ui/link.astro";
     </p>
     <div class="mt-14 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
       <Link
-        href="/#fazemos"
+        href={`${base}#fazemos`}
         class="flex gap-1 rounded-sm border-primary hover:border-secondary"
         rel="noopener">
          Saiba mais

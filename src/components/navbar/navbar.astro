@@ -4,30 +4,33 @@ import Link from "@components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
+// Get the base path from Astro config
+const base = import.meta.env.BASE_URL;
+
 const menuitems = [
   {
     title: "Início",
-    path: "/",
+    path: base,
   },
   {
     title: "Institucional",
-    path: "/institucional",
+    path: `${base}institucional`,
   },
   {
     title: "Cursos",
-    path: "/cursos",
+    path: `${base}cursos`,
   },
   {
     title: "Inscrição e preços",
-    path: "/inscricao",
+    path: `${base}inscricao`,
   },
   {
     title: "Bolsas de estudo",
-    path: "/bolsas",
+    path: `${base}bolsas`,
   },
   {
     title: "Contato",
-    path: "/contato",
+    path: `${base}contato`,
   },
 ];
 ---
@@ -72,13 +75,13 @@ const menuitems = [
                 }
             </ul>
             <div class="lg:hidden flex items-center mt-3 gap-4 border-primary">
-                <Link href="/formulario" size="md" block>Inscreva-se</Link>
+                <Link href={`${base}formulario`} size="md" block>Inscreva-se</Link>
             </div>
         </MenuItems>
     </Astronav>
     <div>
         <div class="hidden lg:flex items-center gap-4">
-            <Link class="border-primary hover:border-secondary rounded-sm" href="/formulario" size="md">Inscreva-se</Link>
+            <Link class="border-primary hover:border-secondary rounded-sm" href={`${base}formulario`} size="md">Inscreva-se</Link>
         </div>
     </div>
   </header>

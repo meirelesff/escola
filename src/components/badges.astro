@@ -1,96 +1,100 @@
 ---
 import Link from "@components/ui/link.astro";
+
+// Get the base path from Astro config
+const base = import.meta.env.BASE_URL;
+
 const courses = [
     {
         name: "NVIVO",
         prof: "Alex Niche",
         instituicao: "UFRGS",
         tipo: "Workshop",
-        link: "/cursos/nvivo-analise-qualitativa",
+        link: `${base}cursos/nvivo-analise-qualitativa`,
     },
     {
         name: "Advanced Text-As-Data",
         prof: "Tiago Ventura e Sebastian Vallejo Vera",
         instituicao: "Georgetown University e University of Western Ontario",
         tipo: "Workshop",
-        link: "/cursos/advanced-text-as-data",
+        link: `${base}cursos/advanced-text-as-data`,
     },
     {
         name: "Ferramentas de Inteligência Artificial para Pesquisa Acadêmica",
         prof: "Rafael Sampaio",
         instituicao: "UFPR",
         tipo: "Workshop",
-        link: "/cursos/ferramentas-ia-pesquisa",
+        link: `${base}cursos/ferramentas-ia-pesquisa`,
     },
     {
         name: "Ideologias Políticas. Teoria, método e fontes de pesquisa",
         prof: "Paulo Cassimiro",
         instituicao: "IESP-UERJ",
         tipo: "Workshop",
-        link: "/cursos/ideologias-politicas",
+        link: `${base}cursos/ideologias-politicas`,
     },
     {
         name: "Sociologia Crítica do Capitalismo",
         prof: "Guilherme Leite Gonçalves",
         instituicao: "IESP-UERJ",
         tipo: "Workshop",
-        link: "/cursos/sociologia-critica-capitalismo",
+        link: `${base}cursos/sociologia-critica-capitalismo`,
     },
     {
         name: "Pesquisando arquivos nas Ciências Sociais",
         prof: "João Marcelo Ehlert Maia e Thiago Lopes",
         instituicao: "FGV e Fiocruz",
         tipo: "Workshop",
-        link: "/cursos/pesquisando-arquivos-ciencias-sociais",
+        link: `${base}cursos/pesquisando-arquivos-ciencias-sociais`,
     },
     {
         name: "Elites Políticas: práticas e desafios das Entrevistas em Profundidade",
         prof: "Wescrey Portes Pereira",
         instituicao: "IESP-UERJ",
         tipo: "Workshop",
-        link: "/cursos/elites-politicas-entrevistas",
+        link: `${base}cursos/elites-politicas-entrevistas`,
     },
     {
         name: "LLMs e Inteligência Artificial",
         prof: "Eduardo Tamaki",
         instituicao: "Giga",
         tipo: "Workshop",
-        link: "/cursos/llms-inteligencia-artificial",
+        link: `${base}cursos/llms-inteligencia-artificial`,
     },
     {
         name: "Projetos urbanos e urbanismos no Brasil",
         prof: "Ana Clara Chequetti",
         instituicao: "IESP-UERJ",
         tipo: "Workshop",
-        link: "/cursos/estudando-projetos-urbanos",
+        link: `${base}cursos/estudando-projetos-urbanos`,
     },
     {
         name: "Regressão Linear",
         prof: "Natália Moreira",
         instituicao: "USP",
         tipo: "Workshop",
-        link: "/cursos/regressao-linear",
+        link: `${base}cursos/regressao-linear`,
     },
     {
         name: "Introdução ao Python para Ciência de Dados",
         prof: "Matheus Pestana",
         instituicao: "FGV ECMI",
         tipo: "Workshop",
-        link: "/cursos/introducao-python-ciencia-dados",
+        link: `${base}cursos/introducao-python-ciencia-dados`,
     },
     {
         name: "Estratégias de monitoramento da disputa política nas redes sociais",
         prof: "Victor Piaia",
         instituicao: "FGV ECMI",
         tipo: "Workshop",
-        link: "/cursos/monitoramento-redes-sociais",
+        link: `${base}cursos/monitoramento-redes-sociais`,
     },
     {
         name: "Construção de conceitos e de indicadores",
         prof: "Yago Paiva",
         instituicao: "IESP-UERJ",
         tipo: "Workshop",
-        link: "/cursos/construcao-indicadores",
+        link: `${base}cursos/construcao-indicadores`,
     }
 ];
 ---
@@ -125,7 +129,7 @@ const courses = [
     </div>
     <div class="mt-14 flex flex-col sm:flex-row gap-3 justify-center">
         <Link
-          href="/cursos"
+          href={`${base}cursos`}
           class="flex gap-1 rounded-sm border-primary hover:border-secondary"
           rel="noopener">
            Veja mais
