@@ -8,6 +8,7 @@ export default defineConfig({
 //  site: "http://inverno.iesp.uerj.br/",
   site: "https://fmeireles.com/",
   base: "/escola",
+  trailingSlash: "always",
   integrations: [tailwind(), mdx(), sitemap()],
   i18n: {
     defaultLocale: "pt-br",
