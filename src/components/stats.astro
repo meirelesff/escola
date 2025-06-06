@@ -1,0 +1,39 @@
+---
+const stats = [
+  {
+    number: "218",
+    title: "Alunos e alunas",
+  },
+  {
+    number: "272",
+    title: "Certificados expedidos",
+  },
+  {
+    number: "13",
+    title: "Cursos ofertados",
+  },
+  {
+    number: "77",
+    title: "Bolsas de ação afirmativa concedidas",
+  },
+];
+---
+
+<section class="container content-center w-4/5 md:w-3/4 mx-auto py-20">
+  <h2 class="text-4xl lg:text-5xl text-primary font-bold lg:tracking-tight text-center mb-6">
+    Os números da nossa última edição
+  </h2>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+    {stats.map((stat) => (
+      <div class="text-center">
+        <div class="text-6xl lg:text-7xl font-bold text-secondary mb-4">
+          {stat.number}
+        </div>
+        <div class="text-lg font-medium text-primary uppercase tracking-wide">
+          {stat.title}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

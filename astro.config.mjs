@@ -7,7 +7,7 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
 //  site: "http://inverno.iesp.uerj.br/",
   site: "https://fmeireles.com/",
-  base: "/escola",
+  base: "/escola/",
   integrations: [tailwind(), mdx(), sitemap()],
   i18n: {
     defaultLocale: "pt-br",
