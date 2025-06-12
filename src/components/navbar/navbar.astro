@@ -29,10 +29,6 @@ const menuitems = [
     path: `${base}bolsas`,
   },
   {
-    title: "Área de inscrição",
-    path: `${base}area-inscricao`,
-  },
-  {
     title: "Contato",
     path: `${base}contato`,
   },
@@ -79,13 +75,13 @@ const menuitems = [
                 }
             </ul>
             <div class="lg:hidden flex items-center mt-3 gap-4 border-primary">
-                <Link href={`${base}formulario`} size="md" block>Inscreva-se</Link>
+                <Link href={`${base}area-inscricao`} size="md" block>Área de inscrição</Link>
             </div>
         </MenuItems>
     </Astronav>
     <div>
         <div class="hidden lg:flex items-center gap-4">
-            <Link class="border-primary hover:border-secondary rounded-sm" href={`${base}formulario`} size="md">Inscreva-se</Link>
+            <Link class="border-primary hover:border-secondary rounded-sm" href={`${base}area-inscricao`} size="md">Área de inscrição</Link>
         </div>
     </div>
   </header>
