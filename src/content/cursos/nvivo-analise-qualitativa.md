@@ -9,7 +9,7 @@ image: {
 }
 publishDate: "2022-11-09 16:39"
 category: "Workshop"
-author: "Alex Niche"
+author: "Alex Niche Teixeira"
 tags: [NVIVO, Análise Qualitativa, CAQDAS]
 ---
 
