@@ -1,0 +1,29 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+
+<Layout title="Área de inscrição">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Área de Inscrição</Fragment>
+      <Fragment slot="desc">
+        Acesse sua conta para gerenciar suas inscrições na Escola de Inverno. Se você ainda não possui uma conta, crie uma diretamente no sistema.
+      </Fragment>
+    </Sectionhead>
+
+    <div class="mt-14">
+      <iframe 
+        src="https://scientia-e.com/sistema/novosis/iesp/2025/" 
+        width="100%" 
+        height="800" 
+        frameborder="0" 
+        marginheight="0" 
+        marginwidth="0" 
+        title="Sistema de inscrição - Escola de Inverno"
+        class="w-full min-h-screen border-0">
+      </iframe>
+    </div>
+  </Container>
+</Layout>
