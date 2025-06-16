@@ -8,7 +8,7 @@ image: {
     alt: "NVIVO Análise Qualitativa"
 }
 publishDate: "2022-11-09 16:39"
-category: "Workshop"
+category: "Curso Intensivo"
 author: "Alex Niche Teixeira"
 tags: [NVIVO, Análise Qualitativa, CAQDAS]
 ---
@@ -52,6 +52,6 @@ O curso busca apresentar os fundamentos da análise qualitativa de dados mistos 
 [https://download.qsrinternational.com/Software/NVivo14/NVivo.x64.exe](https://download.qsrinternational.com/Software/NVivo14/NVivo.x64.exe)
 
 <br>
-<span class="text-2xl font-bold text-primary">Alex Niche</span>
+<span class="text-2xl font-bold text-primary">Alex Niche Teixeira</span>
 
 Especialista em análise qualitativa auxiliada por computador e métodos de pesquisa social. Professor e pesquisador com expertise no uso de ferramentas CAQDAS (Computer Assisted Qualitative Data Analysis Software) para análise de dados qualitativos em ciências sociais.

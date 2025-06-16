@@ -8,7 +8,7 @@ image: {
     alt: "Advanced Text-As-Data"
 }
 publishDate: "2022-11-09 16:39"
-category: "Workshop"
+category: "Curso Intensivo"
 author: "Tiago Ventura e Sebastian Vallejo Vera"
 tags: [Text Analysis, Machine Learning, NLP, Deep Learning, LLM]
 ---

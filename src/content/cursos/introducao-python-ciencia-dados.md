@@ -8,7 +8,7 @@ image: {
     alt: "Python para Ciência de Dados"
 }
 publishDate: "2022-11-09 16:39"
-category: "Workshop"
+category: "Curso Intensivo"
 author: "Matheus Pestana"
 tags: [Python, Ciência de Dados, Programação]
 ---
